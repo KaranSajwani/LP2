@@ -1,0 +1,21 @@
+sudo apt update
+
+sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
+
+virsh list --all
+
+sudo systemctl status libvirtd
+
+press Q
+
+sudo systemctl enable --now libvirtd
+
+sudo apt install virt-manager
+
+sudo virt-manager
+
+click on computer , choose local install , browse local , select fedora.iso file , forward
+
+change cpu to 2 , memory to 2048 and space 20Gib
+
+finish
